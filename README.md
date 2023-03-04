@@ -5,7 +5,7 @@ Para estudo, utilizei o [Type-safe GraphQL for Go](https://gqlgen.com/) que, seg
 
 > is a Go library for building GraphQL servers without any fuss.
 
-Subistituindo as informações que vieram por padrão, criei um servidor simples para realizar uma listagem de algum valores e tendo o mysql como banco para armazenar tudo
+Subistituindo as informações que vieram por padrão, criei um servidor simples para realizar uma listagem de algum valores e tendo o mysql como banco para armazenar tudo. Também é possilve usar o sqlite para testes, tendo apenas como opção remover o comentario. 
 
 Rodar o projeto
 

@@ -11,6 +11,7 @@ import (
 	"github.com/99designs/gqlgen/graphql/playground"
 	"gqlgenProj/internal/database"
 	_ "github.com/go-sql-driver/mysql"
+	// _ "github.com/mattn/go-sqlite3"
 )
 
 const defaultPort = "8080"
@@ -22,6 +23,12 @@ func main() {
 		log.Fatalf("failed to open database: %v", err)
 	}
 	defer db.Close()
+
+	// db, err := sql.Open("sqlite3", "./data.db")
+	// if err != nil {
+	// 	log.Fatalf("failed to open database: %v", err)
+	// }
+	// defer db.Close()
 
 	categoryDb := database.NewCategory(db)
 	courseDb := database.NewCourse(db)
