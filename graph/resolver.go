@@ -8,5 +8,5 @@ import "gqlgenProj/internal/database"
 
 type Resolver struct{
     CategoryDB *database.Category
-    // CourseDB *database.Course
+    CourseDB *database.Course
 }
